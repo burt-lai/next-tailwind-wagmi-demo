@@ -9,7 +9,7 @@ type TMetaProps = {
   canonical?: string
 }
 
-export const Meta = (props: TMetaProps) => {
+const Meta = (props: TMetaProps) => {
   return (
     <>
       <Head>
@@ -65,3 +65,4 @@ export const Meta = (props: TMetaProps) => {
     </>
   )
 }
+export default Meta

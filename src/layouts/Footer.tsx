@@ -1,9 +1,10 @@
-export const Footer = () => {
+const Footer = () => {
   return (
-    <div className="mx-auto max-w-7xl p-5 md:p-8">
-      <div className="border-t py-6 text-center text-sm dark:border-white/10 text-gray-spx5">
+    <div className='p-5 mx-auto max-w-7xl md:p-8'>
+      <div className='py-6 text-sm text-center border-t dark:border-white/10 text-gray-spx5'>
         Spidex &copy; 2022
       </div>
     </div>
-  );
-};
+  )
+}
+export default Footer
