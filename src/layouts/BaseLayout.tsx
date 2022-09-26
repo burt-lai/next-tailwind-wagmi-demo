@@ -8,7 +8,7 @@ type TBaseLayoutProps = {
   children: ReactNode
 }
 
-export const BaseLayout = (props: TBaseLayoutProps) => {
+const BaseLayout = (props: TBaseLayoutProps) => {
   const { pageTitle, pageDesc, children } = props
   return (
     <div className='w-full overflow-x-hidden antialiased dark:bg-black dark:text-white'>
@@ -18,3 +18,4 @@ export const BaseLayout = (props: TBaseLayoutProps) => {
     </div>
   )
 }
+export default BaseLayout

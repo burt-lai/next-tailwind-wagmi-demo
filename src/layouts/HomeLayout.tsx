@@ -9,7 +9,7 @@ type THomeLayoutProps = {
   children: ReactNode
 }
 
-export const HomeLayout = (props: THomeLayoutProps) => {
+const HomeLayout = (props: THomeLayoutProps) => {
   const { pageTitle, pageDesc, children } = props
   return (
     <div className='w-full overflow-x-hidden antialiased dark:bg-black dark:text-white'>
@@ -20,3 +20,4 @@ export const HomeLayout = (props: THomeLayoutProps) => {
     </div>
   )
 }
+export default HomeLayout

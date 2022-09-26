@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
 import { FiChevronDown, FiCopy, FiExternalLink, FiMenu } from 'react-icons/fi'
+import Image from 'next/image'
 import Jazzicon, { jsNumberForAddress } from 'react-jazzicon'
 
 import { ConnectWalletModal } from '@/components/ConnectWalletModal'
@@ -30,7 +31,7 @@ const Header = () => {
         <div className='flex h-[42px] items-center'>
           <Link href='/'>
             <a className='w-24'>
-              <img src={`${router.basePath}/assets/images/logo.png`} />
+              <Image src='/assets/images/logo.png' alt='logo' />
             </a>
           </Link>
           <div className='justify-center hidden ml-14 lg:flex'>
