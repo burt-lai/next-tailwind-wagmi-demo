@@ -7,7 +7,7 @@ import NavPc from './NavPc'
 const Header = () => {
   return (
     <>
-      <div className='relative z-10 flex items-center justify-between max-w-full px-6 py-4 mx-auto font-semibold'>
+      <div className='fixed top-0 left-0 right-0 z-10 flex items-center justify-between max-w-full px-6 py-4 mx-auto font-semibold backdrop-blur'>
         <div className='flex h-[42px] items-center'>
           <Link href='/'>
             <a className='flex h-[42px] items-center'>

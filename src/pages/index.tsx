@@ -12,7 +12,7 @@ const Home: NextPage = () => {
   return (
     <HomeLayout pageTitle='Spidex' pageDesc='Trading, with the smart money'>
       <div
-        className='absolute z-0 top-0 w-full h-[460px] overflow-hidden min-w-[800px] opacity-60'
+        className='absolute z-0 top-0 w-full h-[460px] overflow-hidden  opacity-60'
         style={{
           backgroundImage: 'url(/assets/images/hero-bg.png)',
           backgroundSize: 'auto 100%',
@@ -21,7 +21,7 @@ const Home: NextPage = () => {
       >
         <div className='absolute bottom-0 left-0 w-full h-[30%] from-transparent to-black bg-gradient-to-b' />
       </div>
-      <div className='relative z-20 max-w-6xl min-h-screen px-5 py-10 mx-auto sm:py-14 md:px-10 lg:py-20'>
+      <div className='relative z-0 max-w-6xl px-5 py-10 mx-auto sm:py-14 md:px-10 lg:py-20'>
         <h1 className='text-4xl font-extrabold text-center text-white lg:text-5xl'>
           Trading, with the smart money
         </h1>
@@ -40,7 +40,7 @@ const Home: NextPage = () => {
           </button>
         </div>
       </div>
-      <div className='relative z-20 p-5 mx-auto max-w-7xl md:p-10'>
+      <div className='relative z-0 p-5 mx-auto max-w-7xl md:p-10'>
         <div className='flex flex-col space-y-8 lg:flex-row lg:space-y-0 lg:space-x-10'>
           <div className='p-6 basis-1/1 rounded-xl bg-gray-spx8 lg:basis-1/3'>
             <div className='flex items-center'>
