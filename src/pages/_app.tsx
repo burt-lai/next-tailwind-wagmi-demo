@@ -1,4 +1,4 @@
-import { RainbowKitProvider } from '@rainbow-me/rainbowkit'
+import { RainbowKitProvider, darkTheme } from '@rainbow-me/rainbowkit'
 import { WagmiConfig } from 'wagmi'
 import { AppProps } from 'next/app'
 import { useEffect, useState } from 'react'
@@ -13,7 +13,17 @@ function MyApp ({ Component, pageProps }: AppProps) {
 
   return (
     <WagmiConfig client={wagmiClient}>
-      <RainbowKitProvider chains={chains}>
+      <RainbowKitProvider
+        chains={chains}
+        modalSize='wide'
+        theme={darkTheme({
+          // accentColor: '#131416',
+          accentColorForeground: 'white',
+          borderRadius: 'small',
+          fontStack: 'system',
+          overlayBlur: 'small',
+        })}
+      >
         <Component {...pageProps} />
       </RainbowKitProvider>
     </WagmiConfig>
