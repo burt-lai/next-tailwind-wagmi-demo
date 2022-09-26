@@ -16,7 +16,6 @@ npx tailwindcss init -p
 ### connect wallet
 ```sh
 pnpm add -S ethers wagmi @rainbow-me/rainbowkit
-pnpm add -S @ethersproject/providers @ethersproject/contracts
 ```
 
 ### pnpm error
