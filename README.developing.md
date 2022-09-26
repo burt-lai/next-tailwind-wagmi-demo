@@ -9,6 +9,6 @@ pnpm create next-app --ts <project-name>
 ### import `Tailwindcss`
 <!-- https://tailwindcss.com/docs/installation -->
 ```
-pnpm add -D tailwindcss postcss autoprefixer
+pnpm add -D tailwindcss postcss autoprefixer cssnano
 npx tailwindcss init -p
 ```
