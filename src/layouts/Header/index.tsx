@@ -2,7 +2,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { FiMenu } from 'react-icons/fi'
 import { BasicConnect } from '@/components/ConnectWallet'
-import NavPc from './NavPc3'
+import NavPc from './NavPc'
 
 const Header = () => {
   return (
