@@ -11,7 +11,7 @@ type TBaseLayoutProps = {
 const BaseLayout = (props: TBaseLayoutProps) => {
   const { pageTitle, pageDesc, children } = props
   return (
-    <div className='w-full overflow-x-hidden antialiased dark:bg-black dark:text-white'>
+    <div className='w-full pt-20 overflow-x-hidden antialiased dark:bg-black dark:text-white'>
       <Meta title={pageTitle} description={pageDesc} />
       <Header />
       <main>{children}</main>
