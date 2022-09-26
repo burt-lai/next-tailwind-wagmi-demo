@@ -1,15 +1,18 @@
 import Head from 'next/head'
 import { NextSeo } from 'next-seo'
 
-import { WebsiteConfig } from './website.config'
+import { websiteConfig } from './website.config'
+
+const { site_name, locale } = websiteConfig
+// TODO: who has the highest priority among Mete props `title` and websiteConfig `title`?
 
 type TMetaProps = {
   title: string
   description: string
   canonical?: string
 }
-
 const Meta = (props: TMetaProps) => {
+  const { title, description, canonical } = props
   return (
     <>
       <Head>
@@ -51,15 +54,15 @@ const Meta = (props: TMetaProps) => {
         ></script>
       </Head>
       <NextSeo
-        title={props.title}
-        description={props.description}
-        canonical={props.canonical}
+        title={title}
+        description={description}
+        canonical={canonical}
         openGraph={{
-          title: props.title,
-          description: props.description,
-          url: props.canonical,
-          locale: WebsiteConfig.locale,
-          site_name: WebsiteConfig.site_name,
+          title: title,
+          description: description,
+          url: canonical,
+          locale: locale,
+          site_name: site_name,
         }}
       />
     </>
