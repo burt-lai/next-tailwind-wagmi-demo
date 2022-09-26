@@ -54,6 +54,8 @@ export class RPC {
           key: `REACT_APP_RINKEBY_NODE_URL`,
           fallback: `https://eth-rinkeby.alchemyapi.io/v2/${env.alchemyId}`,
         })
+      default:
+        return []
     }
   }
 }

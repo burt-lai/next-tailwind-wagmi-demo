@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@ethersproject/contracts": "^5.7.0",
+    "@ethersproject/providers": "^5.7.1",
     "@rainbow-me/rainbowkit": "^0.6.1",
     "ethers": "^5.7.1",
     "next": "12.3.1",
