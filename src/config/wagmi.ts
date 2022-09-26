@@ -24,9 +24,10 @@ const connectors = connectorsForWallets([
     groupName: 'Popular',
     wallets: [
       wallet.metaMask({ chains, shimDisconnect: true }),
+      wallet.walletConnect({ chains }),
+      wallet.ledger({ chains }),
       wallet.brave({ chains, shimDisconnect: true }),
       wallet.rainbow({ chains }),
-      wallet.walletConnect({ chains }),
       wallet.coinbase({ appName: 'Coinbase', chains }),
       ...(needsInjectedWalletFallback
         ? [wallet.injected({ chains, shimDisconnect: true })]

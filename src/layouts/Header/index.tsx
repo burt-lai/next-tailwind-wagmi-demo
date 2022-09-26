@@ -23,7 +23,7 @@ const Header = () => {
           <NavPc />
         </div>
         <div className='items-center hidden space-x-8 lg:flex'>
-          <a className='hover:text-white'>English</a>
+          {/* <a className='hover:text-white'>English</a> */}
           <BasicConnect></BasicConnect>
         </div>
         <div className='flex lg:hidden'>
