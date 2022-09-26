@@ -22,12 +22,10 @@ const Header = () => {
           </Link>
           <NavPc />
         </div>
-        <ul className='items-center hidden space-x-8 text-gray-spx4 lg:flex'>
-          <li>
-            <a className='hover:text-white'>English</a>
-          </li>
+        <div className='items-center hidden space-x-8 lg:flex'>
+          <a className='hover:text-white'>English</a>
           <BasicConnect></BasicConnect>
-        </ul>
+        </div>
         <div className='flex lg:hidden'>
           <button
             type='button'
