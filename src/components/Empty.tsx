@@ -10,7 +10,12 @@ const Empty = (props: TEmptyProps) => {
   const { title, description, extra } = props
   return (
     <div className='flex flex-col items-center justify-center min-h-full py-24 mx-auto'>
-      <Image src='/assets/images/empty.png' alt='empty' className='w-32' />
+      <Image
+        src='/assets/images/empty.png'
+        alt='empty'
+        width={32}
+        height={32}
+      />
       {title && (
         <div className='mt-4 text-2xl font-semibold text-white'>{title}</div>
       )}

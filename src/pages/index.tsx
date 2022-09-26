@@ -21,7 +21,7 @@ const Home: NextPage = () => {
       >
         <div className='absolute bottom-0 left-0 w-full h-[30%] from-transparent to-black bg-gradient-to-b' />
       </div>
-      <div className='relative z-20 max-w-6xl px-5 py-10 mx-auto sm:py-14 md:px-10 lg:py-20'>
+      <div className='relative z-20 max-w-6xl min-h-screen px-5 py-10 mx-auto sm:py-14 md:px-10 lg:py-20'>
         <h1 className='text-4xl font-extrabold text-center text-white lg:text-5xl'>
           Trading, with the smart money
         </h1>
@@ -49,6 +49,7 @@ const Home: NextPage = () => {
                   src='/assets/images/icon-trading.svg'
                   alt='trading icon'
                   width={52}
+                  height={52}
                 />
               </div>
               <div className='flex flex-col ml-4'>
@@ -64,6 +65,7 @@ const Home: NextPage = () => {
                   src='/assets/images/icon-pool.svg'
                   alt='pool icon'
                   width={52}
+                  height={52}
                 />
               </div>
               <div className='flex flex-col ml-4'>
@@ -79,6 +81,7 @@ const Home: NextPage = () => {
                   src='/assets/images/icon-user.svg'
                   alt='user icon'
                   width={52}
+                  height={52}
                 />
               </div>
               <div className='flex flex-col ml-4'>

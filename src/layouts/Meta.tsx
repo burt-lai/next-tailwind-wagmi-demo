@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import { NextSeo } from 'next-seo'
+import Script from 'next/script'
 
 import { websiteConfig } from './website.config'
 
@@ -42,17 +43,17 @@ const Meta = (props: TMetaProps) => {
           key='icon16'
         />
         <link rel='icon' href={`/favicon.ico`} key='favicon' />
-        <script
-          src={`/browser-solc.min.js`}
-          type='text/javascript'
-          async
-        ></script>
-        <script
-          src={`/charting_library/charting_library.js`}
-          type='text/javascript'
-          async
-        ></script>
       </Head>
+      <Script
+        src={`/browser-solc.min.js`}
+        type='text/javascript'
+        async
+      ></Script>
+      <Script
+        src={`/charting_library/charting_library.js`}
+        type='text/javascript'
+        async
+      ></Script>
       <NextSeo
         title={title}
         description={description}

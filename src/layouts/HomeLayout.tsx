@@ -1,6 +1,6 @@
 import { ReactNode } from 'react'
 import Meta from './Meta'
-import Header from './Header'
+import Header from './Header/index'
 import Footer from './Footer'
 
 type THomeLayoutProps = {
