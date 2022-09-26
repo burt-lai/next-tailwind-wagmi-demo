@@ -13,8 +13,8 @@ const Empty = (props: TEmptyProps) => {
       <Image
         src='/assets/images/empty.png'
         alt='empty'
-        width={32}
-        height={32}
+        width={128}
+        height={128}
       />
       {title && (
         <div className='mt-4 text-2xl font-semibold text-white'>{title}</div>
