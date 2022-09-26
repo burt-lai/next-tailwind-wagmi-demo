@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import '@rainbow-me/rainbowkit/styles.css';
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
